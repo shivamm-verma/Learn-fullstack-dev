@@ -1,0 +1,32 @@
+div {
+    height: 250px;
+    width: 120px;
+    /* border: 1px dashed black; */
+
+
+}
+
+#start {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+}
+
+#wait {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+}
+
+#go {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    
+}
