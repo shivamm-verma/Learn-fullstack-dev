@@ -1,0 +1,41 @@
+div {
+    height: 150px;
+    width: 150px;
+    background-color: cornflowerblue;
+    transform: rotate(-45deg);
+    display: inline-block;
+    padding: 15px;
+    margin: 2.5em;
+}
+
+.old-div:hover {
+    transition: 1s;
+    transform: rotate(0deg);
+    background-color: salmon;
+    border-radius: 25%;
+    transform: scale(1.25);
+}
+
+/* using some more properties like scale transform and more in another DIVs */
+
+.new-div {
+    background-color: lightslategrey;
+
+}
+
+.new-div:hover {
+    background-color: lightsalmon;
+    transition: 0.8s;
+    transform: scale(1.2);
+    transform: translate(30px, 50px);
+}
+
+*:active {
+    transition: 1s;
+    font-size: 45%;
+    transform: translate(60px, 60px);
+}
+
+h2 {
+    font-size: 2em;
+}

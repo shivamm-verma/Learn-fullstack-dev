@@ -1,0 +1,30 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+#one {
+    height: 80px;
+    color: red;
+    background-color: black;
+}
+
+#two {
+    height: 500px;
+    background-image: url(netlfix-page-img-1\(css6\).jpg);
+    /* background-size: contain; */
+    background-size: cover;
+    /* background-size: auto; */
+}
+
+
+#three {
+    height: 15px;
+    background-color: black;
+}
+#four {
+    height: 45px;
+    color: red;
+    background-color: black;
+}

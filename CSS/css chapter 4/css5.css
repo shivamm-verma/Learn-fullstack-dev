@@ -1,0 +1,12 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: lightpink;
+    display: inline-block;
+    border: 2px solid black ;
+    text-align: center;
+    /* margin: 10px auto; */
+    margin-right: 100px;
+    margin-left: 50px;
+    box-shadow: 5px 5px 70px greenyellow;
+}

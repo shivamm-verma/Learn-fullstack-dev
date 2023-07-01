@@ -1,0 +1,42 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    margin: 20px;
+    border: 3px solid blue;
+    display: inline-block;
+}
+
+#static {
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+
+#relative {
+    background-color: pink;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#absolute {
+    background-color: skyblue;
+    position: absolute;
+    top: 320px;
+    left: 100px;
+}
+
+hr {
+    height: 3px;
+    background-color: black;
+}
+
+#fixed {
+    background-color: salmon;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
