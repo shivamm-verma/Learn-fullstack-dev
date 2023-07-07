@@ -1,0 +1,60 @@
+* {
+    background-image: url("bailey-zindel-unsplash.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+div {
+
+    height: 500px;
+    width: 600px;
+    background-image: none;
+    background-color: white;
+    opacity: 0.45;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 30px;
+    top: 130px;
+    left: 450px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#main:hover{
+    transition: 0.5s;
+    opacity: 0.88;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+#header {
+    opacity: 1;
+    background-color: white;
+    color: black;
+    background-image: none;
+    display: inline;
+    padding-top: 0px;
+    font-size: 4em;
+    padding-top: 0px;    
+
+}
+
+img{
+    background-image: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+form {
+    background-image: none;
+}
+input {
+    background-image: none;
+}
+butt {
+    background-image: none;
+}

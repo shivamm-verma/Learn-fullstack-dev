@@ -1,0 +1,65 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: skyblue;
+    text-align: center;
+
+    animation-name: coloranimation, size,boxanimation;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    /* animation-timing-function: ease-in; */
+    animation-iteration-count: 30;
+    animation-direction: alternate;
+}
+
+@keyframes boxanimation {
+    from {
+        font-size: 20px;
+    }
+
+    to {
+        font-size: 50px;
+        font-weight: bolder;
+    }
+}
+
+@keyframes coloranimation {
+    from {
+        background-color: blue;
+    }
+
+    to {
+        background-color: red;
+    }
+}
+
+@keyframes size {
+    from {
+        height: 100px;
+        width: 300px;
+    }
+
+    to {
+        height: 300px;
+        width: 600px;
+    }
+}
+
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 200px) {
+    * {background-color: green;}
+}
+@media (min-width: 400px) {
+    * {background-color: coral;}
+}
+@media (min-width: 600px) {
+    * {background-color: violet;}
+}
+@media (min-width: 800px) /*and (max-width: 200px)*/ {
+    * {background-color: lawngreen;}
+}
+@media (min-width: 1200px) {
+    * {background-color: cornflowerblue;}
+}
