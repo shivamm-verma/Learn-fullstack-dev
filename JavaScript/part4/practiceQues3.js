@@ -32,11 +32,17 @@
 // Qs3. Write a JS program to find the sum of digits in a number.
 // Example : if number = 287152, sum = 25
 
+let number = 287152 ;                               //prompt/input from user can be done too
+numbStr = `${number}`
+let sum = 0;
+for (char of numbStr) {
+    char = parseInt (char)
+    sum += char
+}
+console.log ("Sum of Number ", number, " is: ", sum )
 
-//will be completed after one more lecture!
 
-
-
+// completed due.
 
 // Qs4. Print the factorial of a number n.
 // [Factorial of a number n is the product of all positive integers less than or equal to a
