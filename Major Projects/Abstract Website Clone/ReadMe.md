@@ -1,4 +1,4 @@
-Hi geeks!
+
 
 # Full Stack Development Mini Project: Replication of Abstract Help Center Website
 
