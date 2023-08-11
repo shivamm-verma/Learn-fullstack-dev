@@ -35,10 +35,8 @@ JavaScript was employed to introduce interactivity to the website. Dynamic featu
 
 This mini project is far from static, and I am committed to enhancing and refining it over time. Future updates may encompass:
 
-- **User Authentication:** Implementation of secure user authentication and authorization mechanisms to augment user-specific interactions.
 - **Enhanced Styling:** Continual refinement of the website's visual appeal and aesthetics to provide an immersive experience.
 - **Expanded Content:** Regular updates to content, reflecting the evolving landscape of abstract design and development.
-- **Performance Optimization:** Iterative optimization to ensure swift loading times and smooth user interactions.
 
 ## Conclusion
 
