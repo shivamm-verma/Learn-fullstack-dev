@@ -1,10 +1,10 @@
-body {
+* {
     margin: 0;
-    font-family: "GT America Standard", serif;
+    /* font-family: "GT America Standard", serif; */
+    font-family: GT system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .main {
-    display: flex;
     height: auto;
     overflow: hidden;
 }
@@ -25,8 +25,8 @@ body {
 }
 
 .topbar h3 {
-    position: absolute;
-    top: 1.65rem;
+    position: relative;
+    top: -1.7rem;
     left: 17rem;
     font-size: xx-large;
     color: white;
@@ -40,18 +40,18 @@ body {
 .signin-submit {
     text-align: right;
     position: relative;
-    top: 20px;
-    position: absolute;
-    right: 4rem;
-    justify-content: space-between;
+    top: 1rem;
+    left: 55rem;
 }
 
 .signin-submit button {
     text-align: right;
     font-size: x-large;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
-
+    font-family: GT system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-weight: 400;
 }
 
 .button1 {
@@ -65,6 +65,7 @@ body {
     background-color: #4C5FD5;
     color: white;
     border: 2px solid #4C5FD5;
+    margin-left: 1rem;
 }
 
 
@@ -80,6 +81,7 @@ body {
 }
 
 .middlebar h1 {
+    font-size: 80px;
     margin-bottom: 1rem;
 }
 
@@ -87,6 +89,7 @@ body {
     height: 3.5rem;
     width: 45rem;
     font-size: smaller;
+    border: 2px solid black;
 }
 
 .middlebar .mid-search {
@@ -102,110 +105,163 @@ label {
 
 .middlebar svg {
     position: relative;
-    right: 42px;
+    right: 55px;
     top: 2px;
+    font-size: 28px;
 }
 
 
-/* STYLING OF CONTENT AREA */
+#formOne input {
+    padding: 1rem;
+    font-size: large;
+}
+
+
+
+/* content styling */
 .content {
-    flex: 1;
-    display: flex;
     position: absolute;
-    top: 30rem;
-    background-color: white;
-    height: 2200px;
-    width: 100%;
-    font-size: xx-large;
-}
-.info-row1 {
+    top: 620px;
+    /* top: 550px; */
     display: flex;
-    flex-direction: column;
-}
-
-.info-row1 img {
-    height: 100px;
-}
-
-.content .info-row1 {
-    height: 380px;
-    width: 550px;
-    padding: 1rem;
-    border: 3px solid black;
-    margin-left: 7rem;
-    margin-top: 10rem;
-}
-
-
-/* row 2 */
-.info-row2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.info-row2 img {
-    height: 100px;
-}
-
-.content .info-row2 {
-    height: 380px;
-    width: 550px;
-    padding: 1rem;
-    border: 3px solid black;
-    margin-left: 7rem;
-    margin-top: 10rem;
-}
-
-
-
-
-
-
-/* ENDBAR PENDING DUE TO LACKING OF TIME
-TO COMLETE THIS PROJECT IS EXCEEIDNG */
-
-/* .endbar {
-    background-color: black;
-    height: 360px;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    color: white;
-}
-
-.cards {
-    height: auto;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    border: 2px solid white;
-    justify-content: center;
-    padding: 0;
-}
-
-.cards a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-
-.card {
-    background-color: #000000;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-}
-
-.heading {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    /* overflow: hidden; */
     font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    /* width: 100vh; */
+    /* height: 100%; */
+    align-content: space-around;
 }
 
-.sub-heading {
-    font-size: 18px;
-    font-weight: normal;
-    margin: 5px 0;
+/* block1 */
+.blocks {
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 250px;
+    font-family: 'GT America Standard', sans-serif;
+    /* border: 2px solid black; */          /*for outlining*/
+    padding: 1rem;
+    align-items: start;
+    margin-left: 7rem;
+}
+
+.blocks img {
+    height: 100px;
+    width: 100px;
+    margin-right: 1.5rem;
+}
+
+.titldesc {
+    width: 450px;
+    /* border: 2px solid black; */          /*for outlining*/
+}
+
+.titldesc h4 {
+    font-weight: bold;
+}
+
+.titldesc a {
+    font-size: 20px;
+    color: #005fc4;
+    
+}
+.titldesc svg {
+    font-size: 20px;
+}
+
+.row2 {
+    display: inline;
+}
+
+/* block2 */
+
+/* .blocks2 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 250px;
+    font-family: 'GT America Standard', sans-serif;
+    border: 2px solid black;
+    padding: 1rem;
+    align-items: start;
+    margin-left: 7rem;
+    position: relative;
+    top: 9rem;
+}
+
+.blocks2 img {
+    height: 100px;
+    width: 100px;
+    margin-right: 1.5rem;
 } */
+
+
+
+
+/* footer styling */
+.footer {
+    position: absolute;
+    top: 125rem;
+    margin: 0;
+    margin-top: 2rem;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 3rem;
+}
+
+.footer .box {
+    display: inline-flex;
+    flex-direction: column;
+    /* outline: auto; */
+    padding: 2rem;
+    width: fit-content;
+    line-height: 0.75rem;
+    margin-left: 3rem;
+
+}
+
+.footer .box a {
+    color: white;
+}
+
+.copyright img {
+    height: 50px;
+    width:  50px;
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    margin-left: 3rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 3rem;
+    right: 6rem;
+    line-height: 1rem;
+}
+
+.copyright p{
+    font-weight: 400;
+    line-height: 1rem;
+    font-size: 20px;
+}
+
+.stickyhelp button{
+    position: absolute;
+    top: 152.5rem;
+    right: 1.5rem;
+    z-index: 5;
+    background-color: #4c5fd5 ;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    border-radius: 40px;
+    padding-bottom: 0.9rem;
+}
+
+.stickyhelp button a{
+    color: white;
+}
