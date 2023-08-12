@@ -117,83 +117,98 @@ label {
 }
 
 
+/* LAST VERSION */
+/* MAIN CONTENT(MIDDLE) STYLING */
 
-/* content styling */
-.content {
-    position: absolute;
-    top: 620px;
-    /* top: 550px; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10px auto;
-    /* overflow: hidden; */
+/* * {
+    font-family: GT system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
-    /* width: 100vh; */
-    /* height: 100%; */
-    align-content: space-around;
-}
+} */
 
-/* block1 */
-.blocks {
-    display: inline-flex;
+.mains {
+    display: flex;
     flex-wrap: wrap;
-    height: 250px;
-    font-family: 'GT America Standard', sans-serif;
-    /* border: 2px solid black; */          /*for outlining*/
-    padding: 1rem;
-    align-items: start;
-    margin-left: 7rem;
+    /* justify-content: space-around; */
 }
 
-.blocks img {
+.block {
+    display: inline-flex;
+    height: fit-content;
+    /* width: 380px; */
+    /* height: 238px; */
+    width: 550px;
+    /* border: 3px solid black; */
+    /* margin-left: 1rem; */
+    margin: 0.75rem;
+    /* line-height: 1rem; */
+    font-size: 24px;
+
+}
+
+.block img {
     height: 100px;
     width: 100px;
-    margin-right: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.75rem;
+    padding: 5px;
+    position: relative;
+    top: 0.8rem;
 }
 
-.titldesc {
-    width: 450px;
-    /* border: 2px solid black; */          /*for outlining*/
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+
 }
 
-.titldesc h4 {
-    font-weight: bold;
-}
-
-.titldesc a {
-    font-size: 20px;
-    color: #005fc4;
-    
-}
-.titldesc svg {
-    font-size: 20px;
+.row1 {
+    /* last verson */
+    position: absolute;
+    top: 580px;
+    margin-left: 11.5rem;
 }
 
 .row2 {
-    display: inline;
+    position: absolute;
+    top: 882px;
+    margin-left: 11.5rem;
 }
 
-/* block2 */
+.row3 {
+    position: absolute;
+    top: 1210px;
+    margin-left: 11.5rem;
+}
 
-/* .blocks2 {
-    display: inline-flex;
-    flex-wrap: wrap;
-    height: 250px;
-    font-family: 'GT America Standard', sans-serif;
-    border: 2px solid black;
-    padding: 1rem;
-    align-items: start;
-    margin-left: 7rem;
+.titledesc {
+    margin: 0rem 0.5rem 0.5rem 0.5rem;
+}
+
+.titledesc a {
+    color: #005fc4;
+    font-size: 20px;
+}
+
+.titledesc h4 {
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.titledesc svg {
     position: relative;
-    top: 9rem;
+    top: 3px;
+    left: 6px;
 }
 
-.blocks2 img {
-    height: 100px;
-    width: 100px;
-    margin-right: 1.5rem;
-} */
+
+
+
+
+
 
 
 
@@ -201,7 +216,7 @@ label {
 /* footer styling */
 .footer {
     position: absolute;
-    top: 125rem;
+    top: 100rem;
     margin: 0;
     margin-top: 2rem;
     background-color: #121212;
@@ -250,7 +265,7 @@ label {
 
 .stickyhelp button{
     position: absolute;
-    top: 152.5rem;
+    top: 127.5rem;
     right: 1.5rem;
     z-index: 5;
     background-color: #4c5fd5 ;
