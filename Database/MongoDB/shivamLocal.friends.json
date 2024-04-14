@@ -1,0 +1,87 @@
+[{
+  "_id": {
+    "$oid": "66199022044415aa0f366a7c"
+  },
+  "name": "pigush kumar",
+  "age": 23,
+  "status": "berozgaar",
+  "body_weight": "normal"
+},
+{
+  "_id": {
+    "$oid": "66199216044415aa0f366a7f"
+  },
+  "name": "ayush kushwaha",
+  "age": 20,
+  "status": "college finder",
+  "body_weight": "normal"
+},
+{
+  "_id": {
+    "$oid": "66199216044415aa0f366a80"
+  },
+  "name": "aaryan sharma",
+  "age": 19,
+  "status": "smol",
+  "body_weight": "normal"
+},
+{
+  "_id": {
+    "$oid": "6619931f044415aa0f366a81"
+  },
+  "name": "kaushik",
+  "occupation": "not vella",
+  "body_weight": "normal",
+  "status": "Not Set Yet"
+},
+{
+  "_id": {
+    "$oid": "6619965d044415aa0f366a82"
+  },
+  "name": "sachin",
+  "body_weight": "normal",
+  "status": "Not Set Yet"
+},
+{
+  "_id": {
+    "$oid": "66199696044415aa0f366a83"
+  },
+  "name": "samanvay",
+  "fullTime": true,
+  "partTime": false,
+  "body_weight": "normal",
+  "status": "Not Set Yet"
+},
+{
+  "_id": {
+    "$oid": "661ad99197c02ba21c530974"
+  },
+  "name": "shivam verma",
+  "age": 19,
+  "status": "learner",
+  "body_weight": "normal"
+},
+{
+  "_id": {
+    "$oid": "661ad9db97c02ba21c530975"
+  },
+  "name": "tani",
+  "body_weight": "normal",
+  "status": "Not Set Yet"
+},
+{
+  "_id": {
+    "$oid": "661ad9db97c02ba21c530976"
+  },
+  "name": "rohan singh",
+  "body_weight": "normal",
+  "status": "Not Set Yet"
+},
+{
+  "_id": {
+    "$oid": "661ad9db97c02ba21c530977"
+  },
+  "name": "manpreet",
+  "body_weight": "normal",
+  "status": "Not Set Yet"
+}]

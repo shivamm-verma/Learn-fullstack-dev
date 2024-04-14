@@ -1,0 +1,110 @@
+// basic commands
+$ show dbs
+
+$ use shivamLocal		(use or create Dbs)
+$ db.createColllection("collection name")		(create a collection)
+
+$ db.dropDatabase()		(Drops the database, RISKY!!)
+$ db.students.insertOne({...})		(automatically create 'Students' collection)
+$ db.students.find()			(TO PRINT DATA FROM THE collection)
+
+$ db.students.insertMany([{...},{...},{...}])		(multiple data recording)
+
+// Sorting of Data
+$ db.students.find().sort({name:1})
+$ db.students.find().sort({name:-11})			(reverse order)
+$ db.students.find().sort({age:1})
+
+// limiting number of Data to print
+$ db.friends.find().limit(50)			(only 50 data's are shown)
+$ db.friends.find().sort({name:1}).limit(1)	(for wanting only top matched data)
+
+// data types in mongoDB
+list/array [], string, number, float, new Date("2023-12-18"), null, {object}
+
+//find method in mogoDB
+$ db.friends.find(occupation: IAS)
+=> .find({filters}, {projection(what you want to see)})
+
+$ db.friends.find({}, {_id: false, name: true})
+
+// Update in mongoDB
+=> .updateOne(filter, update)
+$ db.friends.updateOne({}) 
+
+=> {$set: {...}}			(to update or create a Key)
+
+$ db.friends.updateOne({occupation: "vella"}, {$set:{occupation: "not vella"}})
+$ db.friends.updateOne({occupation: "vella"}, {$set:{scholar: true}})	(creates new)
+$ db.friends.updateOne({_id: ObjectId('6619931f044415aa0f366a81')}, {$set: {gender: "male"}})
+
+=> {$set: {...}}			(to remove a key from the data)
+
+$ db.friends.updateOne({_id: ObjectId('6619931f044415aa0f366a81')}, {$unset: {gender: ""}})
+
+=> .updateMany()
+$ db.friends.updateMany({}, {$set: {body_weight: "normal"}})
+$ db.students.updateMany({fullTime: ($exists:false}}, {$set: (fullTime: true}})
+
+$ db.friends.updateMany({status: {$exists: false}}, {$set: {status: "Not Set Yet"}})
+=> {$exists: false} === does not exist
+
+// Delete in mongoDB
+=> .deleteOne({filter}), .deleteMany({filter})
+$ db.friends.deleteOne({name: 'pallavi'})
+$ db.friends.deleteMany({status: "Not Set Yet"})
+
+// comparison operators
+$ db.friends.find({age:{$gte: 20}})		(greater than or equal to)
+$ db.friends.find({age:{$lt: 20}})		(less than)
+$ db.students.find({gpa: {$gte:3, $lte:4}})	(multiple together)
+
+// $in and $nin(not in)
+$ db.friends.find({age:{$in:[19,20]}})
+$ db.friends.find({age:{$nin:[19,20]}})
+
+// logical operators
+$ db.students.find({$or:[{fullTime:true}, {age: ($1te:22}}]})
+$ db.students.find({$and:[{fullTime:true}, {age: ($1te:22}}]})
+$ db.students.find({$nor:[{fullTime:true}, {age: ($1te:22}}]})
+$ db.students.find({age:{$not: {$gte:30}}})
+
+// indexes
+db.friends.find({name:1}).explain("executionStats")		(mall docs scanned)
+db.friends.createIndex({name:1}).explain("executionStats")	(onlu 1 doc scanned)
+db.friends.getIndexes()
+db.friends.dropIndex("name_1")
+=> quick look up but slows, and takes more memory, slows insert & update, preferred only for a lot of Searching only.
+
+// more
+=> set size of a collection as fixed
+$ db.createCollection ("teachers", {capped:true, size:10240000, max: 100}, {autoIndexId: false})
+			name	fixing size	size in bytes	max fields
+
+=> drop a collection
+db.teachers.drop()		(true)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
