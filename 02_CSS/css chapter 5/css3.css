@@ -1,0 +1,56 @@
+h1 {
+    height: 50px;
+    text-align: center;
+}
+
+#v{
+    background-color: violet;
+}
+#i{
+    background-color: indigo;
+    /* flex-grow: 2;
+    max-width: 50px; */
+}
+#b{
+    background-color: blue;
+}
+#g{
+    background-color: green;
+}
+#y{
+    background-color: yellow;
+    /* TO MAKE IT FILL IN THE WHOLE OUTER DIV */
+    flex-grow: 1;
+    max-width: 120px;
+    min-width: 100px;
+}
+#o{
+    background-color: orange;
+}
+#r{
+    background-color: red;
+    flex-grow: 1;
+}
+
+#container {
+    height: 300px;
+    width: 80%;
+    background-color: thistle;
+    border: 3px solid black;
+    display: flex;
+    /* flex-wrap: wrap;              I HATE WRAP*/
+    flex-direction: row;
+    margin: 10px auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#container div {
+    height: 200px;
+    width: 200px;
+}
+
+.colors {
+    flex-basis: 6em;
+    /* flex-grow: 1; */
+}

@@ -1,0 +1,54 @@
+
+#main {
+    background-color: skyblue;
+    color: black;
+    font-size: 2em;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+.inner {
+    height: 25px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    display: inline-block;
+    border: 3px solid darkred;
+    border-radius:  2em;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+.inner:hover{
+    background-color: darkblue;
+    color: red;
+    transition: 0.5s;
+}
+
+
+input:hover{
+    background-color: red;
+    color: yellow;
+    transition: 0.5s;
+}
+
+#signup{
+    display: inline-block;
+    padding: 2px;
+    font-size: medium;
+}
+
+#signup:hover{
+    background-color: darkkhaki;
+    color: black;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: black;
+    color: red;
+    transition: 1s;
+}

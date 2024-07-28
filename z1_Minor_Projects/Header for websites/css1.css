@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: poppins;
+}
+body{
+    background-color: rgb(165, 165, 113);
+}
+
+#main {
+    background-color: rgb(27, 56, 27);
+    color: black;
+    font-size: 2em;
+    padding: 5px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.inner {
+    height: 25px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    display: inline-block;
+    border: 2px solid rgba(5, 255, 42, 0.722);
+    border-radius: 15px;
+    font-size: large;
+    font-weight: 500;
+}
+.inner:hover {
+    border: none;
+    background-color: rgb(105, 105, 193);
+    color: green;
+    background-color: #ffffffbf;
+    transition: 0.5s;
+}
+
+
+input:hover {
+    background-color: beige;
+    color: yellow;
+    transition: 0.5s;
+}
+
+#signup {
+    display: inline-block;
+    padding: 10px;
+    font-size: medium;
+    border: 2px rgba(255, 255, 255, 0.449) solid;
+    border-radius: 10px;
+}
+
+#signup:hover {
+    background-color: rgb(131, 180, 220);
+    color: black;
+    transition: 0.5s;
+}
+#signup:hover label {
+    color: black;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: black;
+    color: red;
+    transition: 0.5s;
+}
+
+.login-btn{
+    border-radius: 5px;
+}

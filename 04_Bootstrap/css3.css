@@ -1,0 +1,16 @@
+/* * {
+    margin: 25px;
+} */
+
+.card {
+    border: 2px solid black;
+    margin: 50px auto;
+}
+
+/* .card-body,.list-group{
+    border: 1px solid red;
+} */
+
+.text-center{
+    border: none;
+}

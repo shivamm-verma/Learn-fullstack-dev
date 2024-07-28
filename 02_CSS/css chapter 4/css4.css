@@ -1,0 +1,63 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: lightpink;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* individiually fixing some properties to the div blocks */
+
+#first {
+    transform: translate(90px, 120px);
+}
+
+#second {
+    transform: translate(90px, 120px);
+    background-color: lightgreen;
+}
+
+#third {
+    transform: translate(90px, 120px);
+    background-color: skyblue;
+}
+
+/* :hover or :active using */
+
+div:hover {
+    transition: 1s;
+    background-color: darkred;
+}
+
+#second:hover {
+    transition: 1s;
+    background-color: darkgreen;
+}
+
+#third:hover {
+    transition: 1s;
+    background-color: darkblue;
+}
+
+div:active {
+    transition: 1s;
+    transform: skew(-60deg);
+}
+
+#first:active {
+    transition: 0.6s;
+    transform: skew(85deg);
+    background-color: darkred;
+}
+
+#second:active {
+    transition: 0.6s;
+    transform: skew(85deg);
+    background-color: darkgreen;
+}
+
+#third:active {
+    transition: 0.6s;
+    transform: skew(85deg);
+    background-color: darkblue;
+}

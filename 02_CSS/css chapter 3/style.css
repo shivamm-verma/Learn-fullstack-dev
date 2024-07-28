@@ -1,0 +1,42 @@
+div {
+    height: 100px;
+    width: 700px;
+    background-color: lightpink;
+    color: black;
+    /* border-width: 5px;
+    border-style: solid;           **could also be daashed**
+    border-color: black; */
+    border: 5px solid black;
+    border-bottom-color: teal;
+    padding-top: 10px;
+    padding-left: 13px;
+    padding-right: 10px;
+    /* border-radius: 50px; */
+    margin: 20px 20px 0px 0px;
+    /* display: inline; */
+}
+
+h1 {
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: yellow; */
+    border: 2px dashed yellow;
+    border-top-color: teal;
+    padding-left: 15px;
+    margin: 0px;
+    /* display: block; */
+}
+
+button {
+    border: 2px solid yellow;    
+    border-radius: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: black;
+    color: red;
+    font-weight: bolder;
+}
+
+#ID1 {
+    display: inline;
+}

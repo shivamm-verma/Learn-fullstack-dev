@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <h3>Fruit</h3>
+            <input name="Fruit"  id="mango" value="mango" type="radio">
+            <label for="mango">mango</label>
+            <input name="Fruit"  id="apple" value="apple" type="radio">
+            <label for="apple">apple</label>
+            <input name="Fruit"  id="peaches" value="peaches" type="radio">
+            <label for="peaches">peaches</label>
+            <button type="submit">submit</button>
+        </div>
+        <br><br><hr>
+        <div>
+            <h3>subjects</h3>
+            <input name="sub"  id="physics" value="phy" type="checkbox">
+            <label for="physics">physics</label>
+            <input name="sub"  id="chemistry" value="chem" type="checkbox">
+            <label for="chemistry">chemistry</label>
+            <input name="sub"  id="mathematics" value="math" type="checkbox">
+            <label for="mathematics">mathematics</label>
+            <input name="sub"  id="english" value="eng" type="checkbox">
+            <label for="english">english</label>
+            <button type="submit">submit</button>
+        </div>      
+        <br><br> <hr>
+        <br><br>
+        <div>
+            <select name="experience" id="experience">
+                <option>Select your option</option>
+                <option>no experience</option>
+                <option value="beginner">0-2years</option>
+                <option value="worker">2-4years</option>
+                <option value="king">5+ years</option>
+            </select>
+                <button type="submit">submit</button>
+        </div>
+                <br><br> <hr>
+                <br><br>
+                <div>
+
+                    <label for="age" >Age </label>
+                    <input name="age" type="range" id="age" min="0" max="80">
+                    <label for="no-mail-acc" >number of email accounts </label>
+                    <input name="no-mail-acc" type="range" id="no-mail-acc" min="0" max="15">
+                    <label for="salary" >salary </label>
+                    <input name="salary" type="range" id="salary" min="0" max="200000" step="5000">
+                    <br>
+                    <button type="submit">submit</button>
+                </div>
+        </div>
+        <br><br> <hr>
+        <br><br>
+        <div>
+            <label for="review">Comment your review: </label>
+            <textarea 
+                id="review" 
+                name="review"  
+                placeholder="Liked your website? Let us know"
+                rows="3" cols="125">
+            </textarea>
+            <button type="submit">comment</button>
+        </div>
+    </form>
+</body>
+</html>

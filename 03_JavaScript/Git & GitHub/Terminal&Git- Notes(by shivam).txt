@@ -1,0 +1,82 @@
+Some Git bash/terminal Commands:
+
+$ cd Desktop /
+$ clear
+$ pwd = gives current location of directory
+$ ls = gives list of files and directories.
+$ cd .. = back button
+
+make folders;
+$ mkdir [Folder Name]
+
+Flags
+$ ls -l
+$ ls -a
+$ ls -la
+
+Touch Commands;
+$ touch [file name with extension]
+$ touch index.html
+$ touch xyz.txt
+
+Deleting files and Folders; (sensitive)
+$ rm [removes files]
+$ rmdir [removes empty folders only]
+$ rm -rf [removes any folders forcely]
+
+TO DISCONNECT GitHub CONNECTED REPOSITORY from VSCODE ;
+on console, 
+$ rm -rf .git/
+
+
+For instant help form the Terminal;
+$ git --help
+$ ls --help
+$ rm --help
+
+
+Setting Global Git Username and Email;
+$ git config --global user.name "Your Name"
+$ git config --global user.email "youremail@yourdomain.com"
+
+enlisting them;
+$ git config --list
+
+
+Basic Commands;
+$ git add <---file name-->
+$ git commit -m "some message"
+$ git push origin main		         (to push all changed into repo)
+
+
+init command;
+init - used to create a new git repo;
+$ git init
+$ git remote add origin <- link ->
+$ git remote -v (to verify remote)
+$ git branch
+$ (to check branch)
+$ git branch -M main (to rename branch)
+$ git push origin main
+
+
+
+Branch Commands;
+$ git branch (to check branch)
+$ git branch -M main (to rename branch)
+$ git checkout <- branch name ->
+$ git checkout -b <- new branch name ->
+(to navigate)
+(to create new branch)
+$ git branch -d <- branch name -> (to delete branch)
+
+
+
+
+
+
+
+
+
+
+

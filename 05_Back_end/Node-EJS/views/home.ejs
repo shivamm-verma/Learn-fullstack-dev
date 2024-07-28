@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Template</title>
+    <style>
+        body {
+            background-color: rgb(255, 240, 201);
+        }
+
+        button {
+            margin: 10px;
+            letter-spacing: 2px;
+            padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+            background-color: rgba(0, 0, 255, 0.838);
+            color: red;
+            font-weight: bolder;
+            border-radius: 5px;
+            border: 3px solid black;
+        }
+
+        /* *:hover {
+            transition: 1s;
+            background-color: rgb(250, 239, 210);
+
+        } */
+        button:hover {
+            transition: 0.45s ease-out;
+            filter: drop-shadow(5px 5px 50px red);
+            background-color: red;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is <b>Basic HTML.ejs Template</b></h1>
+    <hr>
+    <!-- Main implementaion of EJS -->
+
+    <h2>
+        <%= 5 + 3 %>
+    </h2>
+    <h3>
+        <%= ["bonjour", "Amigo" , "Hola" ][1] %>
+    </h3>
+
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit amet quia praesentium voluptas, deserunt
+        voluptatum sapiente atque, ad, iste explicabo illum error? Qui atque vitae dicta consectetur accusantium quis
+        est.
+        Nesciunt, tenetur. Enim alias ab modi, sapiente laudantium accusantium recusandae ullam illum nostrum
+        consequuntur inventore quasi provident? Illo nesciunt, ut rerum libero impedit vitae expedita repellat,
+        reprehenderit, culpa minima quis.
+        Beatae facilis maiores dolore veritatis provident fugiat numquam eum, cumque asperiores quibusdam perspiciatis,
+        autem, ad consequuntur voluptatum cupiditate labore ab cum vel soluta nobis odio atque in veniam. Natus,
+        recusandae.
+        Maiores voluptas itaque qui veniam harum dicta, ducimus nihil! Quisquam suscipit ea assumenda repudiandae
+        aspernatur, a, deleniti soluta architecto, ex reiciendis mollitia dolorum illum qui accusantium dolores itaque
+        aliquid pariatur?
+        Labore minus ex eaque atque magnam, officiis tempora corrupti quaerat quo quidem delectus corporis facilis
+        repudiandae? Necessitatibus doloribus, delectus officiis magnam minus voluptatem iure placeat corrupti ducimus
+        harum ut est!</p>
+    <hr>
+    <button>Click Me!</button>
+</body>
+
+</html>
